@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EAE2187E-F47D-436B-9D7F-245F60264F6F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bass.Net">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\Bass.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Core">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\Rewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>..\..\Modded v21 Build\Clone Hero_Data\Managed\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-PrivateImplementationDetails-{01869bb3-9c8b-4125-b144-c990aa96a297}\ArrayCopy148.cs" />
+    <Compile Include="-PrivateImplementationDetails-{799FF37D-2237-4D15-9F9D-54D09883141F}\__BB_OBFUSCATOR_VERSION_2_3_1.cs" />
+    <Compile Include="Animator.cs" />
+    <Compile Include="BaseFretAnimator.cs" />
+    <Compile Include="BaseGuitarPlayer.cs" />
+    <Compile Include="BaseMenu.cs" />
+    <Compile Include="BaseNeckController.cs" />
+    <Compile Include="BaseNoteContainer.cs" />
+    <Compile Include="BaseNoteRenderer.cs" />
+    <Compile Include="BasePlayer.cs" />
+    <Compile Include="BassAudioManager.cs" />
+    <Compile Include="BeatRenderer.cs" />
+    <Compile Include="BlackMenu.cs" />
+    <Compile Include="BuildCheck.cs" />
+    <Compile Include="BuildHyperlink.cs" />
+    <Compile Include="BuildVersion.cs" />
+    <Compile Include="ButtonTipIcons.cs" />
+    <Compile Include="CalibrationMenu.cs" />
+    <Compile Include="CameraShake.cs" />
+    <Compile Include="Chart.cs" />
+    <Compile Include="Class0.cs" />
+    <Compile Include="Class3.cs" />
+    <Compile Include="Class40.cs" />
+    <Compile Include="Class41.cs" />
+    <Compile Include="ComboColor.cs" />
+    <Compile Include="ConfirmationMenu.cs" />
+    <Compile Include="Countdown.cs" />
+    <Compile Include="CustomContentMenu.cs" />
+    <Compile Include="CustomNetworkDiscovery.cs" />
+    <Compile Include="DifficultyDisplay.cs" />
+    <Compile Include="DiscordController.cs" />
+    <Compile Include="EndOfSong.cs" />
+    <Compile Include="ExportSongList.cs" />
+    <Compile Include="FadeBehaviour.cs" />
+    <Compile Include="FrameRate.cs" />
+    <Compile Include="Fret_Animator.cs" />
+    <Compile Include="GameManager.cs" />
+    <Compile Include="GameModifiersMenu.cs" />
+    <Compile Include="GClass1.cs" />
+    <Compile Include="GClass10.cs" />
+    <Compile Include="GClass11.cs" />
+    <Compile Include="GClass12.cs" />
+    <Compile Include="SongDirectory.cs" />
+    <Compile Include="GClass14.cs" />
+    <Compile Include="GClass15.cs" />
+    <Compile Include="GClass16.cs" />
+    <Compile Include="GClass17.cs" />
+    <Compile Include="ChartEvent.cs" />
+    <Compile Include="GClass19.cs" />
+    <Compile Include="GClass20.cs" />
+    <Compile Include="GClass21.cs" />
+    <Compile Include="GClass22.cs" />
+    <Compile Include="GClass23.cs" />
+    <Compile Include="GClass24.cs" />
+    <Compile Include="GClass25.cs" />
+    <Compile Include="GClass26.cs" />
+    <Compile Include="INIParser.cs" />
+    <Compile Include="GClass30.cs" />
+    <Compile Include="GClass31.cs" />
+    <Compile Include="GClass4.cs" />
+    <Compile Include="GameSetting.cs" />
+    <Compile Include="GClass6.cs" />
+    <Compile Include="GClass7.cs" />
+    <Compile Include="GClass8.cs" />
+    <Compile Include="GClass9.cs" />
+    <Compile Include="GEnum10.cs" />
+    <Compile Include="GEnum9.cs" />
+    <Compile Include="GHLFret_Animator.cs" />
+    <Compile Include="GHLNeckController.cs" />
+    <Compile Include="GHLNoteContainer.cs" />
+    <Compile Include="GHLNoteRenderer.cs" />
+    <Compile Include="GHLPlayer.cs" />
+    <Compile Include="GlobalVariables.cs" />
+    <Compile Include="GStruct1.cs" />
+    <Compile Include="GStruct2.cs" />
+    <Compile Include="GStruct3.cs" />
+    <Compile Include="GuitarNoteRenderer.cs" />
+    <Compile Include="GuitarPlayer.cs" />
+    <Compile Include="HealthContainer.cs" />
+    <Compile Include="HighwayScroll.cs" />
+    <Compile Include="InGameSettingsMenu.cs" />
+    <Compile Include="LyricDisplay.cs" />
+    <Compile Include="MainMenu.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Common\ControlName.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Common\MathUtilities.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Common\NoteName.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Common\ParsingResult.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Common\ParsingStatus.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Common\ParsingUtilities.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Common\ScaleName.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Common\SmpteFormat.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Common\ThrowIfArgument.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\ArrayUtilities.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\BaseTextEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\ChannelAftertouchEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\ChannelEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\ChannelEventReader.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\ChannelEventWriter.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\ChannelPrefixEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\ChunksCollection.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\ChunksConverterFactory.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\ChunkType.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\ChunkTypesCollection.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\CompressionPolicy.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\ControlChangeEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\ControlUtilities.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\CopyrightNoticeEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\CuePointEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\DataTypesUtilities.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\DeviceNameEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\EndOfTrackEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\EscapeSysExEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\EventReaderFactory.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\EventsCollection.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\EventStatusBytes.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\EventType.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\EventTypesCollection.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\EventWriterFactory.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\ExtraTrackChunkPolicy.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\FileUtilities.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\FourBitNumber.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\HeaderChunk.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\IChunksConverter.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\IEventReader.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\IEventWriter.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\InstrumentNameEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\InvalidChannelEventParameterValueException.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\InvalidChannelEventParameterValuePolicy.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\InvalidChunkSizeException.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\InvalidChunkSizePolicy.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\InvalidEventSizePolicy.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\InvalidMetaEventParameterValueException.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\InvalidMetaEventParameterValuePolicy.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\KeySignatureEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\LyricEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\MarkerEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\MetaEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\MetaEventReader.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\MetaEventWriter.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\MidiChunk.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\MidiEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\MidiException.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\MidiFile.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\MidiFileFormat.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\MidiReader.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\MidiWriter.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\MissedEndOfTrackEventException.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\MissedEndOfTrackPolicy.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\MultiSequenceChunksConverter.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\MultiTrackChunksConverter.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\NoHeaderChunkException.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\NoHeaderChunkPolicy.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\NormalSysExEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\NoteAftertouchEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\NoteEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\NotEnoughBytesException.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\NotEnoughBytesPolicy.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\NoteOffEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\NoteOnEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\NoteUtilities.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\PitchBendEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\PortPrefixEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\ProgramChangeEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\ProgramNameEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\ReadingSettings.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\SequenceNumberEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\SequencerSpecificEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\SequenceTrackNameEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\SetTempoEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\SevenBitNumber.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\SilentNoteOnPolicy.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\SingleTrackChunksConverter.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\SmfUtilities.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\SmpteOffsetEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\SmpteTimeDivision.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\StandardEventTypes.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\SysExEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\SysExEventReader.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\SysExEventWriter.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\TextEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\TicksPerQuarterNoteTimeDivision.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\TimeDivision.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\TimeDivisionFactory.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\TimeSignatureEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\TooManyTrackChunksException.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\TrackChunk.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\TrackChunkUtilities.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\UnexpectedRunningStatusException.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\UnexpectedTrackChunksCountException.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\UnexpectedTrackChunksCountPolicy.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\UnknownChannelEventException.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\UnknownChunk.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\UnknownChunkException.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\UnknownChunkIdPolicy.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\UnknownFileFormatException.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\UnknownFileFormatPolicy.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\UnknownMetaEvent.cs" />
+    <Compile Include="Melanchall\DryWetMidi\Smf\WritingSettings.cs" />
+    <Compile Include="MenuMouse.cs" />
+    <Compile Include="MusicVideo.cs" />
+    <Compile Include="MyNetManager.cs" />
+    <Compile Include="NeckController.cs" />
+    <Compile Include="NetManager.cs" />
+    <Compile Include="NetworkHUD.cs" />
+    <Compile Include="NoteAnimator.cs" />
+    <Compile Include="NoteBomber.cs" />
+    <Compile Include="NoteContainer.cs" />
+    <Compile Include="OpenHitAnimator.cs" />
+    <Compile Include="PauseMenu.cs" />
+    <Compile Include="PlayerProfileMenu.cs" />
+    <Compile Include="PlayerSelection.cs" />
+    <Compile Include="PlayerSelectionCanvas.cs" />
+    <Compile Include="PlayerStats.cs" />
+    <Compile Include="PracticeSectionMenu.cs" />
+    <Compile Include="PracticeUI.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RewiredConsts\Action.cs" />
+    <Compile Include="Rewired\Data\UserDataStore_PlayerPrefs.cs" />
+    <Compile Include="Rewired\Demos\ControlMapperDemoMessage.cs" />
+    <Compile Include="Rewired\FlightPedalsTemplate.cs" />
+    <Compile Include="Rewired\FlightYokeTemplate.cs" />
+    <Compile Include="Rewired\GamepadTemplate.cs" />
+    <Compile Include="Rewired\HOTASTemplate.cs" />
+    <Compile Include="Rewired\IFlightPedalsTemplate.cs" />
+    <Compile Include="Rewired\IFlightYokeTemplate.cs" />
+    <Compile Include="Rewired\IGamepadTemplate.cs" />
+    <Compile Include="Rewired\IHOTASTemplate.cs" />
+    <Compile Include="Rewired\InputManager.cs" />
+    <Compile Include="Rewired\Integration\UnityUI\PlayerPointerEventData.cs" />
+    <Compile Include="Rewired\Integration\UnityUI\PointerEventType.cs" />
+    <Compile Include="Rewired\Integration\UnityUI\RewiredPointerInputModule.cs" />
+    <Compile Include="Rewired\Integration\UnityUI\RewiredStandaloneInputModule.cs" />
+    <Compile Include="Rewired\Internal\ControllerTemplateFactory.cs" />
+    <Compile Include="Rewired\IRacingWheelTemplate.cs" />
+    <Compile Include="Rewired\ISixDofControllerTemplate.cs" />
+    <Compile Include="Rewired\RacingWheelTemplate.cs" />
+    <Compile Include="Rewired\SixDofControllerTemplate.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\ButtonInfo.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\CalibrationWindow.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\CanvasScalerExt.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\CanvasScalerFitter.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\ControlMapper.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\CustomButton.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\CustomSlider.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\CustomToggle.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\ICustomSelectable.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\InputBehaviorWindow.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\InputFieldInfo.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\InputRow.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\LanguageData.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\ScrollbarVisibilityHelper.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\ScrollRectSelectableChild.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\ThemedElement.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\ThemeSettings.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\ToggleInfo.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\UIControl.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\UIControlSet.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\UIElementInfo.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\UIGroup.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\UIImageHelper.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\UISelectionUtility.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\UISliderControl.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\UITools.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\Window.cs" />
+    <Compile Include="Rewired\Utils\ExternalTools.cs" />
+    <Compile Include="RotateScript.cs" />
+    <Compile Include="ScoreManager.cs" />
+    <Compile Include="ScoringPanel.cs" />
+    <Compile Include="ScrollBar.cs" />
+    <Compile Include="SectionBrowser.cs" />
+    <Compile Include="SetlistMenu.cs" />
+    <Compile Include="SettingsMenu.cs" />
+    <Compile Include="SoloCounter.cs" />
+    <Compile Include="SoloCounterSpawner.cs" />
+    <Compile Include="SomeClass.cs" />
+    <Compile Include="Song.cs" />
+    <Compile Include="SongDetails.cs" />
+    <Compile Include="SongEntry.cs" />
+    <Compile Include="SongOptions.cs" />
+    <Compile Include="SongProgress.cs" />
+    <Compile Include="SongScan.cs" />
+    <Compile Include="SongSelect.cs" />
+    <Compile Include="SongSelectPanel.cs" />
+    <Compile Include="SongSelectSearch.cs" />
+    <Compile Include="SongSettingsMenu.cs" />
+    <Compile Include="SongStats.cs" />
+    <Compile Include="SPActivations.cs" />
+    <Compile Include="SPBar.cs" />
+    <Compile Include="SpNeckRenderer.cs" />
+    <Compile Include="SpriteFont.cs" />
+    <Compile Include="StarProgress.cs" />
+    <Compile Include="StreamerSettings.cs" />
+    <Compile Include="TextBox.cs" />
+    <Compile Include="TextTruncExt.cs" />
+    <Compile Include="TipLanguage.cs" />
+    <Compile Include="TipText.cs" />
+    <Compile Include="VertexColors.cs" />
+    <Compile Include="VideoSettings.cs" />
+    <Compile Include="VisibleHitWindow.cs" />
+    <Compile Include="VolumeMenu.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
